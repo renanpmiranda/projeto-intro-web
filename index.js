@@ -28,6 +28,28 @@ const filme3 = {
     elenco: ['Bill Skarsgard', 'Finn Wolfhard', 'Jaeden Martell']
 }
 
+const objetos = []
+
+if(filme1.remake){
+    objetos.push(filme1)
+}else{
+    alert(filme1.nome + ' não adicionado ao Array de Objetos')
+}
+
+if(filme2.remake){
+    objetos.push(filme2)
+}else{
+    alert(filme2.nome + ' não adicionado ao Array de Objetos')
+}
+
+if(filme3.remake){
+    objetos.push(filme3)
+}else{
+    alert(filme3.nome + ' não adicionado ao Array de Objetos')
+}
+
+console.log('Array de Objetos\n',objetos)
+
 const mediaDuracao = (filme1.duracao + filme2.duracao + filme3.duracao)/3
 console.log('A média de duração dos filmes é de', mediaDuracao, 'minutos.')
 
