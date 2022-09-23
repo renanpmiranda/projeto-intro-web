@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    color: white;
+    font-family: Helvetica;
+    padding: 25px;
+}
+
+#pesquisa{
+    padding: 25px;
+    text-align: center;
+    position: relative;
+}
+
+h2{
+    color: white;
+}
+
+.filme{
+    background-color:orange;
+    color: black;
+    font-family: Helvetica;
+    padding: 35px;
+    margin: 20px;
+    width: 600px;
+    height: 200px;
+    margin-left: 350px;
+    position:;
+}
+
+footer{
+    text-align: center;
+    padding: 25px;
+    background-color: black;
+    color: white;
+    font-family: Helvetica;
+}
