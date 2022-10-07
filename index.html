@@ -9,64 +9,78 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Projeto Intro a Dev Web</h1>
-        <br>
-        <h2>Meus Filmes Favoritos</h2>
-    </header>
-    <main>
-        <div id="pesquisa">
-            <label for="botao"></label>
-            <input type="text" name="botao" id="botao">
-            <button type="submit">Buscar</button>
-        </div>
-        <div>
-            <section class="filme">
-                <a href="https://www.imdb.com/title/tt1877830/"><h2>The Batman</h2></a>
-                <br>
-                <ul>
-                    <li>Sinopse: "Quando um sádico serial killer começa a assassinar figuras políticas centrais de Gotham, o Batman é forçado a investigar a corrupção oculta da cidade e questionar o envolvimento de sua família."</li>
-                    <li>Duração: 176 minutos</li>
-                    <li>Ano de Lançamento: 2022</li>
-                    <li>Gênero: Ação/Policial/Drama/Mistério</li>
-                    <li>É um remake? Não</li>
-                    <li>Elenco: Robert Pattinson, Paul Dano, Zoë Kravitz</li>
-                </ul>
-            </section>
-            <section class="filme">
-                <a href="https://www.imdb.com/title/tt0816692/"><h2>Interstellar</h2></a>
-                <br>
-                <ul>
-                    <li>Sinopse: "Uma equipe de exploradores viaja através de um buraco de minhoca no espaço, na tentativa de garantir a sobrevivência da humanidade."</li>
-                    <li>Duração: 169 minutos</li>
-                    <li>Ano de Lançamento: 2014</li>
-                    <li>Gênero: Aventura/Drama/Sci-Fi</li>
-                    <li>É um remake? Não</li>
-                    <li>Elenco: Matthew McConaughey, Jessica Chastain, Anne Hathaway</li>
-                </ul>
-            </section>
-            <section class="filme">
-                <a href="https://www.imdb.com/title/tt1396484/"><h2>IT - A Coisa</h2></a>
-                <br>
-                <ul>
-                    <li>Sinopse: "Um grupo de garotos maltratados se une para destruir um monstro que se disfarça de palhaço e ataca as crianças de sua pequena cidade."</li>
-                    <li>Duração: 135 minutos</li>
-                    <li>Ano de Lançamento: 2017</li>
-                    <li>Gênero: Terror</li>
-                    <li>É um remake? Sim</li>
-                    <li>Elenco: Bill Skarsgard, Finn Wolfhard, Jaeden Martell</li>
-                </ul>
-            </section>
-        </div>
-        <aside>
 
-        </aside>
-    </main>
-    <footer>
-            <p>Criado por Renan Miranda - Apaixonado por Tech e Cinema</p>
+    <div class="container">
+
+        <header>
+            <h1>Projeto Intro a Dev Web</h1>
             <br>
-            <p>Clique <a href="https://github.com/renanpmiranda">aqui</a> para acessar o meu GitHub!</p>
-    </footer>
-    
+            <h2>Meus Filmes Favoritos</h2>
+        </header>
+
+        <main>
+
+            <section id="pesquisa">
+                <label for="botao"></label>
+                <input type="text" name="botao" id="botao">
+                <button type="submit">Buscar</button>
+            </section>
+
+            <section id="listaFilmes">
+                <article class="filme">
+                    <img src="./assets/theBat.jpg" alt="theBatman" id="theBatman">
+                    <ul id="listaBatman">
+                        <br>
+                        <a href="https://www.imdb.com/title/tt1877830/"><h2 id="titleBatman">The Batman</h2></a>
+                        <br>
+                        <li>Sinopse: "Quando um sádico serial killer começa a assassinar figuras políticas centrais de Gotham, o Batman é forçado a investigar a corrupção oculta da cidade e questionar o envolvimento de sua família."</li>
+                        <li>Duração: 176 minutos</li>
+                        <li>Ano de Lançamento: 2022</li>
+                        <li>Gênero: Ação/Policial/Drama/Mistério</li>
+                        <li>É um remake? Não</li>
+                        <li>Elenco: Robert Pattinson, Paul Dano, Zoë Kravitz</li>
+                    </ul>
+                   
+                </article>
+
+                <article class="filme">
+                    <img src="./assets/interstellar.png" alt="interstellar" id="interstellar">
+                    <ul>
+                        <br>
+                        <a href="https://www.imdb.com/title/tt0816692/"><h2>Interstellar</h2></a>
+                        <br>
+                        <li>Sinopse: "Uma equipe de exploradores viaja através de um buraco de minhoca no espaço, na tentativa de garantir a sobrevivência da humanidade."</li>
+                        <li>Duração: 169 minutos</li>
+                        <li>Ano de Lançamento: 2014</li>
+                        <li>Gênero: Aventura/Drama/Sci-Fi</li>
+                        <li>É um remake? Não</li>
+                        <li>Elenco: Matthew McConaughey, Jessica Chastain, Anne Hathaway</li>
+                    </ul>
+                </article>
+
+                <article class="filme">
+                    <img src="./assets/it.jpg" alt="it" id="it">
+                    <ul>
+                        <br>
+                        <a href="https://www.imdb.com/title/tt1396484/"><h2>IT - A Coisa</h2></a>
+                        <br>
+                        <li>Sinopse: "Um grupo de garotos maltratados se une para destruir um monstro que se disfarça de palhaço e ataca as crianças de sua pequena cidade."</li>
+                        <li>Duração: 135 minutos</li>
+                        <li>Ano de Lançamento: 2017</li>
+                        <li>Gênero: Terror</li>
+                        <li>É um remake? Sim</li>
+                        <li>Elenco: Bill Skarsgard, Finn Wolfhard, Jaeden Martell</li>
+                    </ul>
+                </article>
+
+            </section>
+        </main>
+
+        <footer>
+                <p>Criado por Renan Miranda - Apaixonado por Tech e Cinema</p>
+                <br>
+                <p>Clique <a href="https://github.com/renanpmiranda">aqui</a> para acessar o meu GitHub!</p>
+        </footer>
+    </div>
 </body>
 </html>
