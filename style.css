@@ -1,41 +1,96 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 header{
     background-color: black;
     color: white;
     font-family: Helvetica;
-    padding: 25px;
-}
-
-#pesquisa{
-    padding: 25px;
-    text-align: center;
-    position: relative;
+    padding: 2rem;
+    width:200vw;    
 }
 
 h2{
     color: white;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#pesquisa{
+    padding: 2rem;
+}
+
+#listaFilmes{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50vw;
+    margin-bottom: 2rem;
+}
+
 .filme{
     background-color:orange;
     color: black;
     font-family: Helvetica;
-    padding: 35px;
-    margin: 20px;
-    width: 600px;
-    height: 200px;
-    margin-left: 350px;
-    position:;
+    padding: 2.5rem;
+    display: flex;  
+    gap: 2rem;        
+}
+
+#theBatman, #interstellar, #it{    
+    max-width: 200px;
+    max-height: 450px;    
+    width: auto;
+    height: auto;
 }
 
 footer{
     text-align: center;
-    padding: 25px;
+    padding: 2rem;
     background-color: black;
     color: white;
     font-family: Helvetica;
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 800px){
+    header{
+        font-size: 0.8em;
+    }
+
+    #listaFilmes{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 70vw;
+        margin-bottom: 2rem;
+    }
+
+    .filme{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-device-width : 801px) and (max-device-width : 1280px){
+
+    #listaFilmes{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 70vw;
+        margin-bottom: 2rem;
+    }
 }

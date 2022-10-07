@@ -70,9 +70,9 @@ Elenco: ${arrayFilmes[i].elenco}
 `)
 }
 
-const devolveString = (objeto) => {
-    return JSON.stringify(objeto)
-}
+// const devolveString = (objeto) => {
+//     return JSON.stringify(objeto)
+// }
 
 // const filtraOsNomesDoArray = arrayFilmes.filter((titulo) => {
 //     return titulo.nome === 
