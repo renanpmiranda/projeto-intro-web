@@ -35,10 +35,10 @@ const arrayRemakes = []
 for(let i in arrayFilmes){
     if(arrayFilmes[i].remake === true){
         arrayRemakes.push(arrayFilmes[i])
-//     }else{
-//         alert(arrayFilmes[i].nome + ' não adicionado ao Array de Remakes.')
-//     }
-// }
+    }else{
+        alert(arrayFilmes[i].nome + ' não adicionado ao Array de Remakes.')
+    }
+ }
 
 const mediaDuracao = (filme1.duracao + filme2.duracao + filme3.duracao)/3
 console.log('A média de duração dos filmes é de', mediaDuracao, 'minutos.')
@@ -70,28 +70,23 @@ Elenco: ${arrayFilmes[i].elenco}
 `)
 }
 
-// const devolveString = (objeto) => {
-//     return JSON.stringify(objeto)
-// }
+function Buscar(){
 
-// const filtraOsNomesDoArray = arrayFilmes.filter((titulo) => {
-//     return titulo.nome === 
-// })
+    const valorDeBusca = document.getElementById("botao").value
+    const filmeBatman = document.getElementById("filmeBatman")
+    const filmeInterstellar = document.getElementById("filmeInterstellar")
+    const filmeIT = document.getElementById("filmeIT")
 
-console.log(filtraOsNomesDoArray)
-
-// ,string) => {
-//     novoArray = []
-//     for(let i of arrayObjetos){
-//         for(let j in arrayObjetos[i]){
-//             if(j === string){
-//                 novoArray.push(j)
-//             }else{
-//                 alert('Nenhum item foi encontrado.')
-//             }
-//         }
-//     }
-// return novoArray
-// }
-
-// console.log(retornaItensComMesmoTitulo(arrayFilmes,devolveString(filme1)))
+    if(valorDeBusca === "The Batman" || "the batman"){
+        filmeInterstellar.style.display = "none";
+        filmeIT.style.display = "none";
+    } else if (valorDeBusca === "Interstellar" || "interstellar"){
+        filmeBatman.style.display = "none";
+        filmeIT.style.display = "none";
+    } else if (valorDeBusca === "IT" || "it" || "IT - A Coisa"){
+        filmeBatman.style.display = "none"
+        filmeInterstellar.style.display = "none"
+    } else {
+        alert("Filme não encontrado!")
+    }
+}

@@ -47,7 +47,7 @@ main{
     font-family: Helvetica;
     padding: 2.5rem;
     display: flex;  
-    gap: 2rem;        
+    gap: 2.5rem;        
 }
 
 #theBatman, #interstellar, #it{    
@@ -55,6 +55,7 @@ main{
     max-height: 450px;    
     width: auto;
     height: auto;
+    grid-area: 2 / 1;
 }
 
 footer{
