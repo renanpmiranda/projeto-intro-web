@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Intro a Dev Web</title>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,11 +23,11 @@
             <section id="pesquisa">
                 <label for="botao"></label>
                 <input type="text" name="botao" id="botao">
-                <button type="submit">Buscar</button>
+                <button onclick = "Buscar()" type="submit">Buscar</button>
             </section>
 
             <section id="listaFilmes">
-                <article class="filme">
+                <article class="filme" id="filmeBatman">
                     <img src="./assets/theBat.jpg" alt="theBatman" id="theBatman">
                     <ul id="listaBatman">
                         <br>
@@ -43,7 +43,7 @@
                    
                 </article>
 
-                <article class="filme">
+                <article class="filme" id="filmeInterstellar">
                     <img src="./assets/interstellar.png" alt="interstellar" id="interstellar">
                     <ul>
                         <br>
@@ -58,7 +58,7 @@
                     </ul>
                 </article>
 
-                <article class="filme">
+                <article class="filme" id="filmeIT">
                     <img src="./assets/it.jpg" alt="it" id="it">
                     <ul>
                         <br>
