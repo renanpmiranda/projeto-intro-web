@@ -70,23 +70,16 @@ Elenco: ${arrayFilmes[i].elenco}
 `)
 }
 
-function Buscar(){
+function Buscar() {
+    let input = document.getElementById("botao").value
+    input=input.toLowerCase()
+    let x = document.getElementsByClassName("filme")
 
-    const valorDeBusca = document.getElementById("botao").value
-    const filmeBatman = document.getElementById("filmeBatman")
-    const filmeInterstellar = document.getElementById("filmeInterstellar")
-    const filmeIT = document.getElementById("filmeIT")
-
-    if(valorDeBusca === "The Batman" || "the batman"){
-        filmeInterstellar.style.display = "none";
-        filmeIT.style.display = "none";
-    } else if (valorDeBusca === "Interstellar" || "interstellar"){
-        filmeBatman.style.display = "none";
-        filmeIT.style.display = "none";
-    } else if (valorDeBusca === "IT" || "it" || "IT - A Coisa"){
-        filmeBatman.style.display = "none"
-        filmeInterstellar.style.display = "none"
-    } else {
-        alert("Filme não encontrado!")
+    for(i = 0; i < x.length; i++) {
+        if(!x[i].innerHTML.toLowerCase().includes(input)){
+            x[i].style.display="none"
+        }else{
+            x[i].style.display=""
+        }
     }
 }
