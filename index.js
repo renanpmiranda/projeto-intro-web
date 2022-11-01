@@ -31,15 +31,6 @@ const filme3 = {
 const arrayFilmes = []
 arrayFilmes.push(filme1,filme2,filme3)
 
-// const arrayRemakes = []
-// for(let i in arrayFilmes){
-//     if(arrayFilmes[i].remake === true){
-//         arrayRemakes.push(arrayFilmes[i])
-//     }else{
-//         alert(arrayFilmes[i].nome + ' não adicionado ao Array de Remakes.')
-//     }
-//  }
-
 const mediaDuracao = (filme1.duracao + filme2.duracao + filme3.duracao)/3
 console.log('A média de duração dos filmes é de', mediaDuracao, 'minutos.')
 
